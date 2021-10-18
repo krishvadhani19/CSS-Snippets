@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+html {
+    font-size: 65%;
+}
+
+body {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(181, 164, 255);
+    height: 100vh;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 2rem 3rem;
+    color: rgb(255, 251, 1);
+    background-color: rgb(44, 41, 41);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+a::before {
+    content: 'KRISH VADHANI 19';
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 2rem 3rem;
+    background-color: rgb(44, 41, 41);
+    color: rgb(9, 255, 0);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    transition: all 0.5s ease-in-out;
+    transform: rotateX(270deg);
+    transform-origin: top;
+}
+
+a:hover::after {
+    transform: rotateX( 0deg);
+}
+
+a::after {
+    content: 'KRISH VADHANI 19';
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 2rem 3rem;
+    background-color: rgb(44, 41, 41);
+    color: rgb(53, 12, 238);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    transition: all 0.5s ease-in-out;
+    transform: rotateX(270deg);
+    transform-origin: bottom;
+    transition-delay: 0.3s;
+}
+
+a:hover::before {
+    transform: rotateX( 0deg);
+}
